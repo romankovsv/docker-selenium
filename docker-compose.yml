@@ -24,6 +24,6 @@ services:
     environment:
       - BROWSER=chrome
       - HUB_HOST=hub
-      - MODULE=search-module.xml
+      - MODULE=search_module.xml
     volumes:
       - ./search-result:/usr/share/test/test-output
