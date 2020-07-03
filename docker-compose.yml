@@ -1,29 +1,46 @@
 version: "3"
 services:
-  hub:
-    image: selenium/hub:3.141.59
-    ports:
-      - 4444:4444
-  chrome:
-    image: selenium/node-chrome:3.141.59
-    depends_on:
-      - hub
-    environment:
-      - HUB_HOST=hub
-  firefox:
-    image: selenium/node-firefox:3.141.59
-    depends_on:
-      - hub
-    environment:
-      - HUB_HOST=hub
+  zalenium:
+     image: "dosel/zalenium"
+     container_name: zalenium
+     hostname: zalenium
+     tty: true
+     volumes:
+       - /tmp/videos:/home/seluser/videos
+       - /var/run/docker.sock:/var/run/docker.sock
+       - /usr/bin/docker:/usr/bin/docker
+     ports:
+       - 4444:4444
+     command: >
+       start --desiredContainers 2
+             --maxDockerSeleniumContainers 8
+             --screenWidth 800 --screenHeight 600
+             --timeZone "Europe/Berlin"
+             --videoRecordingEnabled true
+             --sauceLabsEnabled false
+             --browserStackEnabled false
+             --testingBotEnabled false
+             --cbtEnabled false
+             --lambdaTestEnabled false
+             --startTunnel false
+     environment:
+       - HOST_UID
+       - HOST_GID
+       - SAUCE_USERNAME
+       - SAUCE_ACCESS_KEY
+       - BROWSER_STACK_USER
+       - BROWSER_STACK_KEY
+       - TESTINGBOT_KEY
+       - TESTINGBOT_SECRET
+       - CBT_USERNAME
+       - CBT_AUTHKEY
+       - LT_USERNAME
+       - LT_ACCESS_KEY
   search-module:
     image: sromankov/selenium-docker
-    depends_on:
-      - chrome
-      - firefox
     environment:
       - BROWSER=chrome
-      - HUB_HOST=hub
+      - HUB_HOST=localhost:4444
       - MODULE=search_module.xml
     volumes:
       - ./search-result:/usr/share/test/test-output
