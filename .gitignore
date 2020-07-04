@@ -10,3 +10,4 @@ allure-results
 /temp
 /selenoid/logs/*
 /selenoid/video/*
+/search-result
