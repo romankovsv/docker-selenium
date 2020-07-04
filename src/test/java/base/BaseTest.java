@@ -18,7 +18,7 @@ public class BaseTest {
     @BeforeTest
     public void setUpDriver(ITestContext context) throws MalformedURLException {
 
-//        String host = "localhost";
+        String host = null;
 //        DesiredCapabilities dc;
 //
 //        if(System.getProperty("BROWSER") != null &&
@@ -28,9 +28,9 @@ public class BaseTest {
 //            dc = DesiredCapabilities.chrome();
 //        }
 //
-//        if(System.getProperty("HUB_HOST") != null){
-//            host = System.getProperty("HUB_HOST");
-//        }
+        if(System.getProperty("HUB_HOST") != null){
+            host = System.getProperty("HUB_HOST");
+        }
 //
 //        String completeURL = "http://" + host +":4444/wd/hub";
 //        dc.setCapability("name", context.getCurrentXmlTest().getName());
@@ -44,7 +44,7 @@ public class BaseTest {
         capabilities.setCapability("enableVideo", true);
 
         driver = new RemoteWebDriver(
-                URI.create("http://localhost:4444/wd/hub").toURL(),
+                URI.create("http://"+host+":4444/wd/hub").toURL(),
                 capabilities
         );
     }

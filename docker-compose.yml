@@ -40,13 +40,17 @@ services:
       command: ["--selenoid-uri","http://selenoid:4444"]
   search-module:
       image: sromankov/selenium-docker
+      container_name: "module"
       depends_on:
         - selenoid
         - selenoid-ui
       environment:
         - BROWSER=chrome
-        - HUB_HOST=hub
+        - HUB_HOST=selenoid
         - MODULE=search_module.xml
       network_mode: bridge
+      links:
+        - selenoid
+        - selenoid-ui
       volumes:
         - ./search-result:/usr/share/test/test-output
