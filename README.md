@@ -23,7 +23,7 @@ execute command:<br />
 mvn clean package -DskipTests <br />
 
 2. Update image <br />
-docker build -t=sromankov/selenium-docker <br />
+docker build -t=sromankov/selenium-docker .<br />
 
 3. All environment variables are set in docker-compose.yml file <br />
 execute command <br />
