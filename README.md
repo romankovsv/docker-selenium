@@ -31,7 +31,10 @@ execute command <br />
 docker-compose up -d<br />
 
 docker-compose starts services for selenium hub and nodes, than executes entrypoint which starts bash script
-healthcheck, the script waits till grid is ready and executes java -cp command which starts test suite (module)
+healthcheck, the script waits till grid is ready and executes java -cp command which starts test suite (module)<br />
 
 Note: selenium grid  could be started separately than in docker-compose.yml just change HUB_HOST domain and port
-in environment section of module
+in environment section of module<br />
+
+Configuration browsers for selenoid located in selenoid/browsers.json<br />
+Video result for run located in selenoid/video<br />
