@@ -15,17 +15,15 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("sromankov/selenium-docker")
+                	sh docker build -t=sromankov/selenium-docker .
                 }
             }
         }
         stage('Push Image') {
             steps {
-                script {
-			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	app.push("${BUILD_NUMBER}")
-			            app.push("latest")
-			        }
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]){
+                    sh "docker login --username${user} --password=${pass}"
+                    sh "docker push sromankov/selenium-docker:latest"
                 }
             }
         }
