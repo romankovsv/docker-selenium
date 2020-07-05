@@ -8,6 +8,6 @@ allure-results
 *.csv
 *.png
 /temp
-/selenoid/logs/*
-/selenoid/video/*
+**/logs/*
+**/video/*
 /search-result
