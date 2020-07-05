@@ -38,7 +38,13 @@ public class BaseTest {
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("chrome");
+        if(System.getProperty("BROWSER") != null &&
+                   System.getProperty("BROWSER").equalsIgnoreCase("firefox")){
+            capabilities.setBrowserName("firefox");
+        }else {
+            capabilities.setBrowserName("chrome");
+        }
+
         capabilities.setVersion("");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);

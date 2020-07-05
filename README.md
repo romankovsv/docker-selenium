@@ -37,4 +37,4 @@ Note: selenium grid  could be started separately than in docker-compose.yml just
 in environment section of module<br />
 
 Configuration browsers for selenoid located in selenoid/browsers.json<br />
-Video result for run located in selenoid/video<br />
+Video results for run located in selenoid/video<br />
