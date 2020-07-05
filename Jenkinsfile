@@ -15,7 +15,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	sh docker build -t=sromankov/selenium-docker .
+                	sh "docker build -t='sromankov/selenium-docker' ."
                 }
             }
         }
