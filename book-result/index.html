@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-book_flight_module">
+              <span class="suite-name border-passed">book-flight-module</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-book_flight_module">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-book_flight_module">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-book_flight_module">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-book_flight_module">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-book_flight_module">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-book_flight_module">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-book_flight_module">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-book_flight_module" class="hide-methods passed suite-book_flight_module"> (hide)</a> <!-- hide-methods passed suite-book_flight_module -->
+                      <a href="#" panel-name="suite-book_flight_module" class="show-methods passed suite-book_flight_module"> (show)</a> <!-- show-methods passed suite-book_flight_module -->
+                    </span>
+                    <div class="method-list-content passed suite-book_flight_module">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="findFlightPage">findFlightPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="findFlightPage">findFlightPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="flightCOnfirmationPage">flightCOnfirmationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="flightCOnfirmationPage">flightCOnfirmationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="flightsDetailsPage">flightsDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="flightsDetailsPage">flightsDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="registrationConformationPage">registrationConformationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="registrationConformationPage">registrationConformationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="registrationPageTest">registrationPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-book_flight_module" title="tests.BookFlightTest" hash-for-method="registrationPageTest">registrationPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-book_flight_module -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-book_flight_module" class="panel book_flight_module">
+          <div class="suite-book_flight_module-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BookFlightTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findFlightPage">
+                  </a> <!-- findFlightPage -->
+                  <span class="method-name">findFlightPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findFlightPage">
+                  </a> <!-- findFlightPage -->
+                  <span class="method-name">findFlightPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightCOnfirmationPage">
+                  </a> <!-- flightCOnfirmationPage -->
+                  <span class="method-name">flightCOnfirmationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightCOnfirmationPage">
+                  </a> <!-- flightCOnfirmationPage -->
+                  <span class="method-name">flightCOnfirmationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightsDetailsPage">
+                  </a> <!-- flightsDetailsPage -->
+                  <span class="method-name">flightsDetailsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightsDetailsPage">
+                  </a> <!-- flightsDetailsPage -->
+                  <span class="method-name">flightsDetailsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationConformationPage">
+                  </a> <!-- registrationConformationPage -->
+                  <span class="method-name">registrationConformationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationConformationPage">
+                  </a> <!-- registrationConformationPage -->
+                  <span class="method-name">registrationConformationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationPageTest">
+                  </a> <!-- registrationPageTest -->
+                  <span class="method-name">registrationPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationPageTest">
+                  </a> <!-- registrationPageTest -->
+                  <span class="method-name">registrationPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-book_flight_module-class-passed -->
+        </div> <!-- panel book_flight_module -->
+        <div panel-name="test-xml-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/usr/share/test/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;book-flight-module&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;book-flight-1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;expectedPrice&quot; value=&quot;$584 USD&quot;/&gt;
+    &lt;parameter name=&quot;numberOfPassengers&quot; value=&quot;1&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BookFlightTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- book-flight-1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;book-flight-2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;expectedPrice&quot; value=&quot;$1169 USD&quot;/&gt;
+    &lt;parameter name=&quot;numberOfPassengers&quot; value=&quot;2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BookFlightTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- book-flight-2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;book-flight-3&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;expectedPrice&quot; value=&quot;$1753 USD&quot;/&gt;
+    &lt;parameter name=&quot;numberOfPassengers&quot; value=&quot;3&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BookFlightTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- book-flight-3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;book-flight-4&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;expectedPrice&quot; value=&quot;$2338 USD&quot;/&gt;
+    &lt;parameter name=&quot;numberOfPassengers&quot; value=&quot;4&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BookFlightTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- book-flight-4 --&gt;
+&lt;/suite&gt; &lt;!-- book-flight-module --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for book-flight-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">book-flight-1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">book-flight-2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">book-flight-3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">book-flight-4 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for book-flight-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for book-flight-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_book_flight_module');
+function tableData_book_flight_module() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'registrationPageTest')
+data.setCell(0, 2, 'tests.BookFlightTest')
+data.setCell(0, 3, 18948);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'registrationPageTest')
+data.setCell(1, 2, 'tests.BookFlightTest')
+data.setCell(1, 3, 13809);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'findFlightPage')
+data.setCell(2, 2, 'tests.BookFlightTest')
+data.setCell(2, 3, 10450);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'findFlightPage')
+data.setCell(3, 2, 'tests.BookFlightTest')
+data.setCell(3, 3, 8368);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'flightCOnfirmationPage')
+data.setCell(4, 2, 'tests.BookFlightTest')
+data.setCell(4, 3, 4823);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'flightsDetailsPage')
+data.setCell(5, 2, 'tests.BookFlightTest')
+data.setCell(5, 3, 4624);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'flightCOnfirmationPage')
+data.setCell(6, 2, 'tests.BookFlightTest')
+data.setCell(6, 3, 4371);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registrationConformationPage')
+data.setCell(7, 2, 'tests.BookFlightTest')
+data.setCell(7, 3, 4131);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'flightsDetailsPage')
+data.setCell(8, 2, 'tests.BookFlightTest')
+data.setCell(8, 3, 3762);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registrationConformationPage')
+data.setCell(9, 2, 'tests.BookFlightTest')
+data.setCell(9, 3, 2620);
+window.suiteTableData['book_flight_module']= { tableData: data, tableDiv: 'times-div-book_flight_module'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-book_flight_module">
+              </div> <!-- times-div-book_flight_module -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for book-flight-module</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-book_flight_module" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookFlightTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@56ef9176)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@4566e5bd)</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@1ed4004b)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@ff5b51f)</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpParameters(4, $2338 USD)</span>
+                <span class="method-start">18145 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpParameters(3, $1753 USD)</span>
+                <span class="method-start">18165 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpParameters(2, $1169 USD)</span>
+                <span class="method-start">18167 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">18428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">18435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConformationPage</span>
+                <span class="method-start">32270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConformationPage</span>
+                <span class="method-start">32697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConformationPage</span>
+                <span class="method-start">32959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightsDetailsPage</span>
+                <span class="method-start">34893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightsDetailsPage</span>
+                <span class="method-start">35427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightsDetailsPage</span>
+                <span class="method-start">35706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightPage</span>
+                <span class="method-start">39100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightPage</span>
+                <span class="method-start">39519 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightPage</span>
+                <span class="method-start">39759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightCOnfirmationPage</span>
+                <span class="method-start">46985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightCOnfirmationPage</span>
+                <span class="method-start">47845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightCOnfirmationPage</span>
+                <span class="method-start">47889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">51330 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52462 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52713 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpParameters(1, $584 USD)</span>
+                <span class="method-start">59293 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">registrationPageTest</span>
+                <span class="method-start">59327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationConformationPage</span>
+                <span class="method-start">78277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightsDetailsPage</span>
+                <span class="method-start">82411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightPage</span>
+                <span class="method-start">86174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flightCOnfirmationPage</span>
+                <span class="method-start">96628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100999 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

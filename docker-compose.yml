@@ -1,7 +1,8 @@
 version: "3"
 services:
   firefox:
-      image: selenoid/vnc_firefox:77.0
+      image: selenoid/vnc_firefox:76.0
+      shm_size: '1gb'
   chrome:
       image: selenoid/vnc_chrome:83.0
       depends_on:
@@ -53,3 +54,51 @@ services:
         - selenoid-ui
       volumes:
         - ./search-result:/usr/share/test/test-output
+  search-module-chrome:
+    image: sromankov/selenium-docker
+    container_name: "module_chrome"
+    depends_on:
+      - selenoid
+      - selenoid-ui
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=selenoid
+      - MODULE=search_module.xml
+    network_mode: bridge
+    links:
+      - selenoid
+      - selenoid-ui
+    volumes:
+      - ./search-result-chrome:/usr/share/test/test-output
+  books-module:
+      image: sromankov/selenium-docker
+      container_name: "bmodule"
+      depends_on:
+        - selenoid
+        - selenoid-ui
+      environment:
+        - BROWSER=chrome
+        - HUB_HOST=selenoid
+        - MODULE=testng.xml
+      network_mode: bridge
+      links:
+        - selenoid
+        - selenoid-ui
+      volumes:
+        - ./book-result:/usr/share/test/test-output
+  books-moduleff:
+    image: sromankov/selenium-docker
+    container_name: "bmoduleff"
+    depends_on:
+      - selenoid
+      - selenoid-ui
+    environment:
+      - BROWSER=firefox
+      - HUB_HOST=selenoid
+      - MODULE=testng.xml
+    network_mode: bridge
+    links:
+      - selenoid
+      - selenoid-ui
+    volumes:
+      - ./book-resultff:/usr/share/test/test-output

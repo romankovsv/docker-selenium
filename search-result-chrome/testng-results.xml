@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="search-module" duration-ms="132293" started-at="2020-07-05T16:05:14 GMT" finished-at="2020-07-05T16:07:27 GMT">
+    <groups>
+    </groups>
+    <test name="search-java" duration-ms="77214" started-at="2020-07-05T16:05:14 GMT" finished-at="2020-07-05T16:06:32 GMT">
+      <class name="com.serachmodule.com.SearchTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.serachmodule.com.SearchTest@4439f31e]" name="setUpDriver" is-config="true" duration-ms="18426" started-at="2020-07-05T16:05:14 GMT" finished-at="2020-07-05T16:05:33 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e70a728]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.serachmodule.com.SearchTest@4439f31e]" name="search" duration-ms="58016" started-at="2020-07-05T16:05:33 GMT" finished-at="2020-07-05T16:06:31 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.serachmodule.com.SearchTest@4439f31e]" name="tearDown" is-config="true" duration-ms="352" started-at="2020-07-05T16:06:31 GMT" finished-at="2020-07-05T16:06:32 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.serachmodule.com.SearchTest -->
+    </test> <!-- search-java -->
+    <test name="search-js" duration-ms="54403" started-at="2020-07-05T16:06:32 GMT" finished-at="2020-07-05T16:07:27 GMT">
+      <class name="com.serachmodule.com.SearchTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.serachmodule.com.SearchTest@482f8f11]" name="setUpDriver" is-config="true" duration-ms="34570" started-at="2020-07-05T16:06:32 GMT" finished-at="2020-07-05T16:07:07 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@b7838a9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.serachmodule.com.SearchTest@482f8f11]" name="search" duration-ms="19746" started-at="2020-07-05T16:07:07 GMT" finished-at="2020-07-05T16:07:27 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[javascript]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.serachmodule.com.SearchTest@482f8f11]" name="tearDown" is-config="true" duration-ms="83" started-at="2020-07-05T16:07:27 GMT" finished-at="2020-07-05T16:07:27 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.serachmodule.com.SearchTest -->
+    </test> <!-- search-js -->
+  </suite> <!-- search-module -->
+</testng-results>
