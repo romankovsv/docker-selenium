@@ -46,6 +46,7 @@ public class SearchPage {
 
     public void goToVideos() {
         this.wait.until(ExpectedConditions.visibilityOf(videosLink));
+
         videosLink.click();
     }
 
