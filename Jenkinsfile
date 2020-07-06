@@ -28,8 +28,8 @@ pipeline {
                 script {
                 //push app image to registry (dockerhub) with creds marked with ID dockerhub in Jenkins credentials
 			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	image.push("${BUILD_NUMBER}")
-			            image.push("latest")
+			        	image.push("${BUILD_NUMBER}"+"latest")
+
 			        }
                 }
             }
