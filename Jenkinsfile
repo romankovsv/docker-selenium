@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-    node{
+    agent none
     stages {
         stage('Build Jar') {
             agent {
@@ -35,12 +34,6 @@ pipeline {
                 }
             }
         }
-        stage('Remove Unused docker image') {
-          steps{
-          //remove unused local image
-           sh "docker rmi --force \$(docker images -q ${image.id} | uniq)"
-          }
-        }
-    }
+
     }
 }
