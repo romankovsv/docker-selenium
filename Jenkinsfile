@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    node{
     stages {
         stage('Build Jar') {
             agent {
@@ -40,5 +41,6 @@ pipeline {
            sh "docker rmi --force \$(docker images -q ${image.id} | uniq)"
           }
         }
+    }
     }
 }
