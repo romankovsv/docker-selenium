@@ -55,7 +55,7 @@ For actual slave I use my own machine:<br/>
 2. Set remote folder which will be used for saving data for slave e.g. /home/oem/jenk<br/>
 3. Download agent.jar <br/>
 4. Run following command, which will be shown in jenkins <br/>
-java -jar agent.jar -jnlpUrl <br/>
+ sudo java -jar agent.jar -jnlpUrl <br/>
 http://localhost:8899/computer/mymachine/slave-agent.jnlp<br/>
 -secret 32fd223949644a78739c827487c5f611461230258ac11d322525b54578d881be <br/>
 -workDir "/home/oem/jenk"<br/>
